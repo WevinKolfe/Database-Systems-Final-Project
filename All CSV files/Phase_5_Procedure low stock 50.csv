@@ -1,0 +1,47 @@
+productID,productName,categoryName,supplierName,unitsInStock,reorderLevel,unitsOnOrder
+31,"Gorgonzola Telino","Dairy Products","Formaggi Fortini s.r.l.",0,20,70
+21,"Sir Rodney's Scones",Confections,"Specialty Biscuits",3,5,40
+66,"Louisiana Hot Spiced Okra",Condiments,"New Orleans Cajun Delights",4,20,100
+74,"Longlife Tofu",Produce,"Tokyo Traders",4,5,20
+45,"Rogede sild",Seafood,Lyngbysild,5,15,70
+8,"Northwoods Cranberry Sauce",Condiments,"Grandma Kelly's Homestead",6,0,0
+68,"Scottish Longbreads",Confections,"Specialty Biscuits",6,15,10
+32,"Mascarpone Fabioli","Dairy Products","Formaggi Fortini s.r.l.",9,25,40
+30,"Nord-Ost Matjeshering",Seafood,"Nord-Ost-Fisch Handelsgesellschaft mbH",10,15,0
+49,Maxilaku,Confections,"Karkki Oy",10,15,60
+37,"Gravad lax",Seafood,"Svensk Sjofoda AB",11,25,50
+3,"Aniseed Syrup",Condiments,"Exotic Liquids",13,25,70
+72,"Mozzarella di Giovanni","Dairy Products","Formaggi Fortini s.r.l.",14,0,0
+7,"Uncle Bob's Organic Dried Pears",Produce,"Grandma Kelly's Homestead",15,10,0
+48,Chocolade,Confections,"Zaanse Snoepfabriek",15,25,70
+70,"Outback Lager",Beverages,Pavlova,15,30,10
+26,"Gumbar Gummibarchen",Confections,"Heli Susswaren GmbH & Co. KG",15,0,0
+62,"Tarte au sucre",Confections,"Forets d'erables",17,0,0
+38,"Cote de Blaye",Beverages,"Aux joyeux ecclesiastiques",17,15,0
+43,"Ipoh Coffee",Beverages,"Leka Trading",17,25,10
+2,Chang,Beverages,"Exotic Liquids",17,25,40
+60,"Camembert Pierrot","Dairy Products","Gai paturage",19,0,0
+35,"Steeleye Stout",Beverages,"Bigfoot Breweries",20,15,0
+51,"Manjimup Dried Apples",Produce,G'day,20,10,0
+54,Tourtiere,Meat/Poultry,"Ma Maison",21,10,0
+56,"Gnocchi di nonna Alice",Grains/Cereals,"Pasta Buttini s.r.l.",21,30,10
+11,"Queso Cabrales","Dairy Products","Cooperativa de Quesos 'Las Cabras'",22,30,30
+64,"Wimmers gute Semmelknodel",Grains/Cereals,"Plutzer Lebensmittelgrossmarkte AG",22,30,80
+13,Konbu,Seafood,Mayumi's,24,5,0
+63,Vegie-spread,Condiments,Pavlova,24,5,0
+19,"Teatime Chocolate Biscuits",Confections,"Specialty Biscuits",25,5,0
+69,Gudbrandsdalsost,"Dairy Products","Norske Meierier",26,15,0
+71,Flotemysost,"Dairy Products","Norske Meierier",26,0,0
+44,"Gula Malacca",Condiments,"Leka Trading",27,15,0
+16,Pavlova,Confections,Pavlova,29,10,0
+10,Ikura,Seafood,"Tokyo Traders",31,0,0
+77,"Original Frankfurter grune Sosse",Condiments,"Plutzer Lebensmittelgrossmarkte AG",32,15,0
+14,Tofu,Produce,Mayumi's,35,0,0
+57,"Ravioli Angelo",Grains/Cereals,"Pasta Buttini s.r.l.",36,20,0
+47,"Zaanse koeken",Confections,"Zaanse Snoepfabriek",36,0,0
+52,"Filo Mix",Grains/Cereals,G'day,38,25,0
+15,"Genen Shouyu",Condiments,Mayumi's,39,5,0
+1,Chai,Beverages,"Exotic Liquids",39,10,0
+20,"Sir Rodney's Marmalade",Confections,"Specialty Biscuits",40,0,0
+18,"Carnarvon Tigers",Seafood,Pavlova,42,0,0
+27,"Schoggi Schokolade",Confections,"Heli Susswaren GmbH & Co. KG",49,30,0

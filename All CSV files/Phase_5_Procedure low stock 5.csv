@@ -1,0 +1,5 @@
+productID,productName,categoryName,supplierName,unitsInStock,reorderLevel,unitsOnOrder
+31,"Gorgonzola Telino","Dairy Products","Formaggi Fortini s.r.l.",0,20,70
+21,"Sir Rodney's Scones",Confections,"Specialty Biscuits",3,5,40
+66,"Louisiana Hot Spiced Okra",Condiments,"New Orleans Cajun Delights",4,20,100
+74,"Longlife Tofu",Produce,"Tokyo Traders",4,5,20

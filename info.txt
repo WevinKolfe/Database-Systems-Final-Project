@@ -1,0 +1,89 @@
+============================================================
+  PROJECT SETUP GUIDE – company_db
+  Final Project | Database Systems
+============================================================
+
+SOFTWARE REQUIREMENTS
+─────────────────────
+- MySQL Community Server 8.0+  (https://dev.mysql.com/downloads/mysql/)
+- MySQL Workbench 8.0+         (https://dev.mysql.com/downloads/workbench/)
+- Python 3.8+  with pandas, openpyxl (only needed to regenerate the CSV)
+
+HOW TO RUN THE PROJECT FROM SCRATCH
+─────────────────────────────────────
+
+STEP 0 — Prepare the cleaned CSV
+  Option A (recommended): Use the pre-cleaned file company_data_clean.csv
+           included with this submission.
+  Option B: Re-generate it by running:
+           python3 clean_data.py
+           (requires pandas: pip install pandas openpyxl)
+
+STEP 1 — Open MySQL Workbench and connect to your local MySQL instance.
+
+STEP 2 — Run Phase 1 (Database Creation & Data Loading)
+  File: phase1_db_creation.sql
+  - Open the file in MySQL Workbench.
+  - IMPORTANT: Edit the LOAD DATA INFILE path to the absolute path of
+    company_data_clean.csv on your machine, e.g.:
+      Windows: 'C:/Users/YourName/Desktop/company_data_clean.csv'
+      Mac/Linux: '/home/yourname/company_data_clean.csv'
+  - If LOAD DATA INFILE is restricted, use the Table Import Wizard instead:
+      Right-click raw_orders in the Navigator → Table Data Import Wizard
+      → select company_data_clean.csv → follow the prompts.
+  - Execute the script (Ctrl+Shift+Enter or click the lightning bolt).
+
+STEP 3 — Run Phase 3 (Normalization)
+  File: phase3_normalization.sql
+  - Execute the full script.
+  - This creates 8 normalized tables from raw_orders.
+
+STEP 4 — Run Phase 4 (Table Alterations)
+  File: phase4_alterations.sql
+  - Adds Primary Keys, Foreign Keys, and constraints.
+  - Execute the full script.
+
+STEP 5 — Run Phase 5 (Views, Triggers, Stored Procedures)
+  File: phase5_views_triggers_procedures.sql
+  - Creates the employee sales view, stock-reduction trigger,
+    and low-stock stored procedure.
+  - Execute the full script.
+
+STEP 6 — Run Phase 6 (User Management)
+  File: phase6_user_management.sql
+  - Creates AlexSmith (DBA) and JamieLee (Analyst) users.
+  - Execute as root (or a user with GRANT OPTION).
+
+STEP 7 — Phase 7 (Backup)
+  In MySQL Workbench: Server → Data Export
+    - Select "company_db"
+    - Check "Include Stored Routines and Functions"
+    - Export to Self-Contained File
+    - Name it: company_db_backup.sql
+    - Click "Start Export"
+  OR via command line (see phase7_backup.sql for full command).
+
+FILE LIST
+─────────────────────────────────────────────────────────
+  company_data_clean.csv          Cleaned input data (Phase 1)
+  phase1_db_creation.sql          Database & table creation + data load
+  phase3_normalization.sql        Normalized tables via CTAS
+  phase4_alterations.sql          PKs, FKs, constraints
+  phase5_views_triggers_procedures.sql  View / Trigger / Stored Proc
+  phase6_user_management.sql      Users and privileges
+  phase7_backup.sql               Backup instructions & verification
+  info.txt                        This file
+
+TROUBLESHOOTING
+─────────────────────────────────────────────────────────
+  LOAD DATA INFILE error:
+    → Run: SET GLOBAL local_infile=1;
+    → Or use the Table Import Wizard instead.
+
+  Foreign Key constraint fails during Phase 4:
+    → Make sure Phase 3 ran without errors first.
+    → Run: SET FOREIGN_KEY_CHECKS=0; before Phase 4, then SET FOREIGN_KEY_CHECKS=1;
+
+  User already exists error in Phase 6:
+    → The script includes DROP USER IF EXISTS to handle this automatically.
+============================================================

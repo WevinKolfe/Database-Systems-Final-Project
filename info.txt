@@ -15,7 +15,8 @@ HOW TO RUN THE PROJECT FROM SCRATCH
 STEP 0 — Prepare the cleaned CSV
   Option A (recommended): Use the pre-cleaned file company_data_clean.csv
            included with this submission.
-  Option B: Re-generate it by running:
+  Option B: Manually clean. Need to take original excel file and select click each of the three date columns and format all cells to the date format "YYYY-MM-DD".
+  Option C: Re-generate it by running:
            python3 clean_data.py
            (requires pandas: pip install pandas openpyxl)
 

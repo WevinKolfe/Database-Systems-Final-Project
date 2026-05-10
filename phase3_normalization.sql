@@ -84,7 +84,7 @@ SELECT
 FROM raw_orders;
 
 -- Verify row counts
-SELECT 'customers'     AS tbl, COUNT(*) AS rows FROM customers    UNION ALL
+SELECT 'customers' as 'Table',          COUNT(*) AS numRows FROM customers    UNION ALL
 SELECT 'employees',          COUNT(*) FROM employees   UNION ALL
 SELECT 'categories',         COUNT(*) FROM categories  UNION ALL
 SELECT 'suppliers',          COUNT(*) FROM suppliers   UNION ALL
